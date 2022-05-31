@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap');
+
+*{
+	font-family: 'Open-Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+main{
+	color: #385a64;
+}
+/*-------- Menu --------*/
+nav{
+	text-align: right;
+	border-bottom: 1px solid #F1EEE9;
+	padding: 1%;
+	background-color: white;
+}
+
+nav li{
+	display: inline;
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav a{
+	text-decoration: none;
+	color: gray;
+}
+
+nav a:hover{
+	color: #385a64;
+}
+
+/*-------- End Menu --------*/
+
+
+/*-------- konten --------*/
+button{
+	background-color: #ff735c;
+	outline: none;
+	border-width: 0px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 8px #666666;
+	padding: 10px;
+	margin-top: 5px;
+}
+
+button:hover{
+	background-color: pink;
+}
+
+button a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+}
+
+#logo{
+	width: 7%;
+}
+
+#selamatDatang{
+	color: #ff735c;
+}
+
+#konten{
+	background-color: white;
+	line-height: 30px;
+}
+
+#home{
+	text-align: left;
+	padding: 2%;
+	overflow: auto;
+	background-image: url("../img/knitting.jpg");
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+#text-home{
+	width: 30%;
+	font-size: 20px;
+	margin:15px 0px;
+}
+
+#home-img, #testimoni-img{
+	display: none;
+	/*margin-top: 0;
+	position: absolute;*/
+}
+
+
+
+/*produk*/
+#produk{
+	text-align: center;
+	background-color: #ff735c;
+	color: white;
+	padding-top: 10px;
+}
+
+.flex-container{
+	display: flex;
+    padding: 20px;
+}
+
+.card, .card-profil{
+	color: #385a64;
+	flex-grow: 1;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+   	padding: 20px;
+   	margin: 20px;
+   	width: 20%;
+}
+
+.produk-img, .customer-img, #foto-profil{
+	margin-top: 15px;
+	width: 30%;
+	border-radius: 50%;
+}
+/*end produk*/
+
+/*Testimoni*/
+#testimoni{
+	background-image: url('../img/wave.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+
+.btn-testimoni{
+	display: block;
+	margin: auto;
+	color: white;
+	font-style: bold;
+}
+
+.testimoni-pembeli{
+	font-style: italic;
+	display: block;
+}
+
+
+/*end testimoni*/
+
+/*kontak*/
+#kontak{
+	padding: 40px;
+	overflow: auto;
+	background-image: url("../img/knitting-testimoni.jpg");
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+/*#testimoni-img{
+	width: 30%;
+	position: relative;
+	float: right;
+	margin-top: 0px;
+}*/
+
+
+#box-form{
+	width: 50%;
+}
+
+input, textarea{
+	width: 100%;
+}
+
+input{
+	height: 40px;
+}
+
+textarea{
+	height: 200px;
+}
+
+/*profil*/
+aside{
+	text-align: center;
+	font-size: 12px;
+	padding: 20px;
+}
+
+table{
+	margin-top: 10px;
+	border-width: 1px;
+	width: 100%;
+}
+
+.card-profil{
+	height: 300px;
+	margin: auto;
+}
+
+/*-------- End Konten --------*/
+
+/*-------- Footer --------*/
+#sosmed{
+	background-color: #b8aab2;
+	padding: 30px;
+}
+
+#sosmed li{
+	display: inline;
+    list-style-type: none;
+    width: 50px;
+}
+
+.ikonSosmed{
+	width: 5%;
+	margin-right: 30px;
+}
+
+footer{
+	text-align: center;
+}
+
+footer p{
+	padding: 5px;
+	background-color: #385a64;
+	font-size: 15px;
+	color: white;
+}
+/*-------- Footer --------*/
+
+/*Ukuran media*/
+@media screen and (max-width: 550px)
+{
+	#home, #kontak{
+		background-image: none;
+	}
+
+	#home{
+		text-align: center;
+	}
+
+	#home-img, #testimoni-img{
+		display: block;
+		width: 50%;
+		margin: auto;
+		padding-top: 15px; 
+	}
+
+	#logo{
+		width: 15%;
+	}
+
+	#text-home, #box-form{
+		width: 100%;
+	}
+
+	#text-home, button a{
+		font-size: 15px;
+	}
+
+	footer{
+		text-align: center;
+	}
+
+	.ikonSosmed{
+		width: 10%;
+	}
+
+	.flex-container{
+		flex-direction: column;
+	}
+
+	.card, .card-profil{
+		width: 80%;
+		margin: auto;
+		margin-top: 15px;
+		font-size: 14px;
+	}
+}
